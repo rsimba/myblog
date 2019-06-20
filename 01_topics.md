@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: default
 title: Tópicos
 ---
 
-{% for post in site.categories.topicos %}
+{% for post in site.categories.Topicos %}
  <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
