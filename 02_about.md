@@ -7,7 +7,7 @@ permalink: /about/
 Ola e sejam todos bem-vindos ao meu blog pessoal.
 
 ## Quem Sou Eu?
-
+![Foto](/img/0.jpg)
 Chamo-me Ricardo Simba e sou Engenheiro de Redes IP, e blogger nos tempos livres. No passado trabalhei para umas das maiores Operadoras de Telecomunicacoes em Angola mas actualmente trabalho para a Cisco como Systems Engineer.
 
 ## Sobre o Blog
