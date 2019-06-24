@@ -4,7 +4,7 @@ title: Sobre Mim
 permalink: /about/
 ---
 
-Ola e sejam todos bem-vindos ao meu blog pessoal.
+Ola e sejam todos bem-vindos ao meu blog pessoal e espero possam aprender algo novo.
 
 ## Quem Sou Eu?
 
