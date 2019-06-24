@@ -7,7 +7,9 @@ permalink: /about/
 
 Ola e sejam todos bem-vindos ao meu blog pessoal.
 
-## Sobre o Site
-Este blog foi criado com o objectivo de documentar todos os meus trabalhos profissionais e nao so.
+Chamo-me Ricardo Simba e sou Engenheiro de Redes IP, e blogger nos tempos livres. No passado trabalhei para umas das maiores Operadoras de Telecomunicacoes em Angola mas actualmente trabalho para a Cisco como Systems Engineer.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Sobre o Blog
+
+Criei este blog com o objectivo de documentar principalmente todos os meus trabalhos profissionais a medida que vou avancado na minha carreira.
+
