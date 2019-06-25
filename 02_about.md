@@ -17,4 +17,4 @@ Acredito firmente nos principios do ***Open Source*** e principalmente a informa
 Tenho estado a construir o blog usando o Jekyll e alojado no GitHub, ele em si nao e ainda um produto final. Adoptei um design simples e limpo por preferencia pessoal que permita maior concentracao na escrita / leitura.
 
 
-***Isencao de Responsabilidade: As opinioes expressas neste blog sao minhas e nao de terceiros.***
+***Isencao de Responsabilidade: As opinioes expressas neste blog sao somente minhas e nao de terceiros.***
