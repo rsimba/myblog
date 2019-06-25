@@ -15,3 +15,6 @@ Chamo-me **Ricardo Simba**, sou Engenheiro de Redes IP e actualmente trabalho pa
 Acredito firmente nos principios do ***Open Source*** e principalmente a informacao deve ser partilhada sempre que possivel,  este blog com o objectivo de documentar principalmente todos os meus trabalhos profissionais e ao fazer isso, nao so estarei a praticar as minhas ***Soft Skills*** mas tal como tenho aprendido muita coisa a partir de varios blogs, acredito tambem que alguma informacao sera util futuros engenheiros de redes e nao so.
 
 Tenho estado a construir o blog usando o Jekyll e alojado no GitHub, ele em si nao e ainda um produto final. Adoptei um design simples e limpo por preferencia pessoal que permita maior concentracao na escrita / leitura.
+
+
+***Isencao de Responsabilidade: As opinioes expressas neste blog sao minhas e nao de terceiros.***
