@@ -8,7 +8,7 @@ Este e o me blog pessoal, sejam todos bem-vindos.
 
 ## Quem Sou Eu?
 
-Chamo-me **Ricardo Simba**, sou Engenheiro de Redes IP e actualmente trabalho para a **Cisco** como **Systems Engineer**. Minha experiencia profissional gira essencialmente em torno de redes de operadoras de Internet (ISP) e empresariais, assim como em sistemas Unix / Linux, programacao em C/Python, e scripting em Bash.
+Chamo-me **Ricardo Simba**, sou Engenheiro de Redes IP e actualmente a trabalhar para a **Cisco** como **Systems Engineer**. Minha experiencia profissional gira essencialmente em torno de redes de operadoras de Internet (ISP) e empresariais, assim como em sistemas Unix / Linux, programacao em C/Python, e scripting em Bash.
 
 ## Sobre o Blog
 
