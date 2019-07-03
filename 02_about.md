@@ -8,7 +8,7 @@ Este e o me blog pessoal, sejam todos bem-vindos.
 
 ## Quem Sou Eu?
 
-Chamo-me **Ricardo Simba**, sou engenheiro de Redes IP focado em redes de Operadoras de Internet (**ISP**) e Empresariais. Actualmente trabalho para a **Cisco** como **Systems Engineer**, onde tenho dando o meu contributo em **Conectar o Desconectado**. Oficialmente comecei a minha carreira profissional em 2007, tendo ate aqui acumulado vasta experiencia nos campos acima referenciados, assim como em sistemas **Unix** / Linux, programacao em **C/Python**, e scripting em **Bash**. Ao longo da minha trajectoria profissional, obtive algumas certificacoes que servem para validar o meu conhecimento e habilidade em determinadas areas.
+Chamo-me **Ricardo Simba**, sou engenheiro de Redes IP focado em redes de Operadores de Internet (**ISP**) e Empresariais. Actualmente trabalho para a **Cisco** como **Systems Engineer**, onde tenho dando o meu contributo em **Conectar o Desconectado**. Oficialmente comecei a minha carreira profissional em 2007, tendo ate aqui acumulado vasta experiencia nos campos acima referenciados, assim como em sistemas **Unix** / Linux, programacao em **C/Python**, e scripting em **Bash**. Ao longo da minha trajectoria profissional, obtive algumas certificacoes que servem para validar o meu conhecimento e habilidade em determinadas areas.
 
 Se por por alguma razao houver a necessidade em contactar, podem ver no rodape os meus perfies de diferentes redes sociais em que posso facilmente ser contactado.
 
@@ -19,4 +19,4 @@ Acredito firmente nos principios do ***Open Source*** e principalmente a informa
 Tenho estado a construir o blog usando o Jekyll e alojado no GitHub, ele em si nao e ainda um produto final. Adoptei um design simples e limpo por preferencia pessoal que permita maior concentracao na escrita / leitura.
 
 
-***Isencao de Responsabilidade: As opinioes expressas neste blog sao somente minhas e nao de terceiros.***
+***Isencao de Responsabilidade: O conteudo deste site nao e visao oficial, apenas e uma base de dados para os que procuram aprofundar. As opinioes expressas neste blog sao somente minhas e nao de terceiros.***
