@@ -18,5 +18,6 @@ Acredito firmente nos principios do ***Open Source*** e principalmente a informa
 
 Tenho estado a construir o blog usando o Jekyll e alojado no GitHub, ele em si nao e ainda um produto final. Adoptei um design simples e limpo por preferencia pessoal que permita maior concentracao na escrita / leitura.
 
+Embora que a intencao deste blog é de ser independente de qualquer fabricante e sendo eu funcionario de um fabricante, por razoes eticas o conteudo deste blog será principalmente relacionado às soluções da Cisco.
 
-***Isencao de Responsabilidade: O conteudo deste site nao e visao oficial, apenas e uma base de dados para os que procuram aprofundar. As opinioes expressas neste blog sao somente minhas e nao de terceiros.***
+***Isencao de Responsabilidade: O conteudo deste site não é de modo algum uma visao oficial, apenas é uma base de dados para os que procuram aprofundar. As opinioes expressas neste blog sao somente minhas e nao de terceiros.***
