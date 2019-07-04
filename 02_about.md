@@ -13,9 +13,9 @@ Chamo-me **Ricardo Simba**, sou engenheiro de Redes IP focado em Operadores de T
 
 ## Sobre o blog
 
-Acredito firmente nos principios do ***Open Source***, principalmente na comunidade, liberdade e na partilha da informacao sempre que possivel. Pretendo com este blog, partilhar a informação que aprendi e tenho aprendido ao longo da minha carreira profissional, e ao fazer isso, nao so estarei a praticar as minhas ***Soft Skills*** mas tal como tenho aprendido muita coisa a partir de varios blogs, acredito que esta e a minha contribuicao em ajudar outros nas suas carreiras e incentivar mais engenheiros a partilharem informacao que muitos não têm acesso.
+Acredito firmente nos principios do ***Open Source***, principalmente na comunidade, liberdade e na partilha da informacao sempre que possível. Pretendo com este blog, partilhar a informação que aprendi e tenho aprendido ao longo da minha carreira profissional de formas a ajudar principalmente quem esteja a começar ou pensa começar carreira em redes. Auto didata ou não, todos nós aprendemos alguma coisa de alguém e em um determinado momento temos a responsabilidade em dar algo de volta, esta é a minha e espero que mais engenheiros Angolanos possam fazer o mesmo.
 
-Tenho estado a construir este site no Jekyll e alojado no GitHub, ele em si não ê ainda um produto final e irá sofrer algumas alterações. Adoptei um design simples e limpo por preferência pessoal e que permita maior concentracao na escrita / leitura.
+Tenho estado a construir este site usando o Jekyll e alojado no GitHub, ele em si não é ainda um produto final e irá sofrer algumas alterações. Adoptei um design simples e limpo por preferência pessoal e que permita maior concentração na escrita / leitura.
 
 Embora que a intencao deste blog é de ser independente de qualquer fabricante e sendo eu funcionario de um fabricante, por razoes eticas o conteudo deste blog será principalmente relacionado às soluções da Cisco.
 
