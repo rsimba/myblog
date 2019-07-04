@@ -8,7 +8,7 @@ Este é o meu blog pessoal, sejam todos bem-vindos.
 
 ## Quem Sou Eu?
 
-Chamo-me **Ricardo Simba**, sou engenheiro de Redes IP focado em Operadores de Telecomunicações. Actualmente trabalho para a **Cisco** como **Systems Engineer**, onde tenho dado o meu contributo em **Conectar o Desconectado**. Oficialmente, comecei a minha carreira profissional em 2007, tendo até aqui acumulado vasta experiência no campo acima mencionado, assim como em sistemas **Unix** / Linux, programação em **C / Python**, e scripting em **Bash**.
+Chamo-me **Ricardo Simba**, sou engenheiro de Redes IP focado em Operadores de Telecomunicações. Actualmente trabalho para a **Cisco** como **Systems Engineer**, onde tenho dado o meu contributo em **Conectar o Desconectado**. Oficialmente, comecei a minha carreira profissional em 2007, tendo até aqui acumulado vasta experiência no campo acima mencionado e em sistemas **Unix** / Linux, programação em **C / Python**, e scripting em **Bash**.
 
 
 ## Sobre o Blog
