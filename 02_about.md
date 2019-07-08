@@ -22,4 +22,4 @@ O meu objectivo e de usar este site como a plataforma para a partilha da informa
 Tenho estado a construir este site usando o [Jekyll](https://jekyllrb.com/) e alojado no [GitHub](https://github.com/), ele em si não é ainda um producto final e farei algumas mudanças sempre que tiver tempo. Por preferência pessoal, adoptei um design simples e limpo , para permitir maior concentração na escrita e na leitura.
 
 
-***Isençao de Responsabilidade: O conteudo deste site constitue apenas o meu ponto de vista pessoal e nao é de forma alguma a visao oficial de um fabricante ou entidade.***
+***Por favor, lembre-se que os artigos aqui publicados sao apenas opinoes pessoais.***
