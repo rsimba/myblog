@@ -17,7 +17,7 @@ Chamo-me **Ricardo Simba**. Sou engenheiro de Redes IP focado em Operadores de T
 
 ## Sobre o blog
 
-Um dos principios da Internet e que acredito firmente e a partilha livre da informacao. Pretendo com este blog, partilhar a informação que aprendi e tenho aprendido ao longo da minha carreira profissional, e com isto ajudar quem esteja a começar ou pensa começar carreira em redes.
+Um dos principios da Internet e que acredito firmente e a partilha livre da informacao. Pretendo com este blog, partilhar a informação que aprendi e tenho aprendido ao longo da minha carreira profissional, e com isto ajudar quem esteja a começar ou pensa começar uma carreira em redes.
 
 Os mais experientes de hoje foram os principiantes de ontem e ao longo da nossa trajectoria aprendemos muita coisa de outras pessoas, em um determinado momento temos todos a responsabilidade de partilhar, orientar, guiar os principiantes ou engenheiros juniores.
 
