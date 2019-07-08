@@ -17,10 +17,11 @@ Chamo-me **Ricardo Simba**. Sou engenheiro de Redes IP focado em Operadores de T
 
 ## Sobre o blog
 
-Acredito firmente nos principios do ***Open Source***, principalmente na comunidade, liberdade e na partilha da informacao sempre que possível. Pretendo com este blog, partilhar a informação que aprendi e tenho aprendido ao longo da minha carreira profissional, de formas a ajudar principalmente quem esteja a começar ou pensa começar carreira em redes. Auto didata ou não, todos nós aprendemos alguma coisa de alguém e em um determinado momento temos a responsabilidade de dar algo de volta, esta é a minha e espero que mais engenheiros Angolanos possam fazer o mesmo. Umas das vantagens para mim em ter um blog é de ter de praticar as minhas *Soft Skills*, algo que em condições normais os engenheiros em geral ignoram mas que são muito importantes.
+Um dos principios da Internet e que acredito firmente e a partilha livre da informacao. Pretendo com este blog, partilhar a informação que aprendi e tenho aprendido ao longo da minha carreira profissional, e com isto ajudar quem esteja a começar ou pensa começar carreira em redes.
 
-Tenho estado a construir este site usando o [Jekyll](https://jekyllrb.com/) e alojado no [GitHub](https://github.com/), ele em si não é ainda um producto final e irá sofrer algumas alterações. Adoptei um design simples e limpo por preferência pessoal e que permita maior concentração na escrita / leitura.
+Os mais experientes de hoje foram os principiantes de ontem e ao longo da nossa trajectoria aprendemos muita coisa de outras pessoas, em um determinado momento temos todos a responsabilidade de partilhar, orientar, guiar os principiantes ou engenheiros juniores.
 
-Embora que a intencao deste blog é de ser independente de qualquer fabricante e sendo eu funcionario de um fabricante, por razoes eticas o conteudo deste blog será principalmente relacionado às soluções da Cisco.
+Tenho estado a construir este site usando o [Jekyll](https://jekyllrb.com/) e alojado no [GitHub](https://github.com/), ele em si não é ainda um producto final e irá sofrer algumas alterações. Adoptei um design simples e limpo por preferência pessoal, de formas a permitir maior concentração na escrita e leitura.
 
-***Isençao de Responsabilidade: O conteudo deste site não é de forma alguma uma visao oficial, apenas é uma base de dados para os que procuram aprofundar. As opinioes expressas neste blog sao somente minhas e nao de terceiros.***
+
+***Isençao de Responsabilidade: O conteudo deste site constitue apenas o meu ponto de vista pessoal e nao é de forma alguma a visao oficial de um fabricante ou entidade.***
