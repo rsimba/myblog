@@ -19,4 +19,4 @@ Tenho estado a construir este site usando o [Jekyll](https://jekyllrb.com/) e al
 
 Embora que a intencao deste blog é de ser independente de qualquer fabricante e sendo eu funcionario de um fabricante, por razoes eticas o conteudo deste blog será principalmente relacionado às soluções da Cisco.
 
-***Isencao de Responsabilidade: O conteudo deste site não é de forma alguma uma visao oficial, apenas é uma base de dados para os que procuram aprofundar. As opinioes expressas neste blog sao somente minhas e nao de terceiros.***
+***Isençao de Responsabilidade: O conteudo deste site não é de forma alguma uma visao oficial, apenas é uma base de dados para os que procuram aprofundar. As opinioes expressas neste blog sao somente minhas e nao de terceiros.***
