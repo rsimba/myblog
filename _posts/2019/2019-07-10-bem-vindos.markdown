@@ -5,7 +5,7 @@ date: "2019-07-10 10:11"
 categories: Arquivo
 author: Ricardo Simba
 ---
-Bem-vindo ao meu blog e este e o primeiro de muitos *posts*.
+Este e o meu primeiro de muitos *posts*.
 
 A medida que vamos avançado na nossa carreira profissional, aprendemos muitas coisas novas, revisamos e reforçamos o que ja sabemos, mas se nao documentarmos este conhecimento, corremos o risco da repeticao desnecessaria. Portanto, pretendo com este blog, documentar o que aprendi sobre uma determinada tecnologia e ao mesmo tempo testar o meu entendimento da mesma porque acredito que se nao conseguirmos algo de forma simples, possivelmente nao entendemos muito bem este algo.
 
