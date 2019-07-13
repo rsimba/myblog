@@ -38,6 +38,9 @@ minima:
 #header_pages:
 # - about.md
 
+disqus:
+  shortname: www-ricardosimba-com
+  
 # Build settings
 theme: minima
 
