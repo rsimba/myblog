@@ -2,7 +2,7 @@
 layout: post
 title: "Bem-vindo"
 date: "2019-07-10 10:11"
-categories: Arquivo
+categories: Geral
 comments: true
 author: Ricardo Simba
 ---
