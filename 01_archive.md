@@ -15,7 +15,7 @@ title: Arquivo
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      * {{ post.date | date_to_string }} &raquo;  [ {{ post.title }} ]({{ post.url }})
+        * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
     </article>
     {% endfor %}
   </div>
