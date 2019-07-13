@@ -7,3 +7,5 @@
 #
 layout: home
 ---
+
+<a href="https://ricardosimba.com{{ post.url }}#disqus_thread">0 Comments</a>
