@@ -40,7 +40,9 @@ minima:
 
 disqus:
   shortname: www-ricardosimba-com
-  
+
+google_analytics: UA-143827240-1
+
 # Build settings
 theme: minima
 
