@@ -14,6 +14,4 @@ Por outra, ao longo da minha carreira profissinal aprendi e tenho aprendido muit
 A voce, leitor, tenho apenas dois pedidos: Comentarios e Perguntas. Nao so isto fara-me melhorar e aprender algo novo mas tambem poderei nao estar certo em alguma coisa ou ter esquecido algo, por isso o encorajo a deixar o seu comentario.
 
 
- Abraços
-
- Ricardo Simba
+ Abraços,
