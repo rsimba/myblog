@@ -11,7 +11,7 @@ Este é o meu blog pessoal, sejam todos bem-vindos.
 
 <img src="/assets/rs.jpg" align=left>
 
-Chamo-me **Ricardo Simba**. Sou engenheiro de Redes IP focado em Operadores de Telecomunicações e actualmente trabalho para a [Cisco](https://www.cisco.com/) como [Systems Engineer](https://www.youtube.com/watch?v=vq5kqGbxBB4). Oficialmente, comecei a minha carreira profissional em 2007, tendo até aqui acumulado vasta experiência principalmente em redes IP, em Sistemas **Unix** / Linux, Programação em **C / Python**, e scripting em **Bash**.
+Chamo-me **Ricardo Simba**. Sou engenheiro de Redes IP focado em Operadores de Telecomunicações e actualmente trabalho para a [Cisco](https://www.cisco.com/) como [Systems Engineer](https://www.youtube.com/watch?v=vq5kqGbxBB4). Oficialmente, comecei a minha carreira profissional em 2007, tendo até aqui acumulado vasta experiência principalmente em redes IP, em Sistemas **Unix** / Linux, Programação em **C / Python**, e scripting em **Bash**. Quer isto dizer que os meus *posts* serao principalmente sobre as tecnologias, protocolos e sistemas operativos citados a cima. Estas sao as principais certificacoes: 
 
 <img src="/assets/ccna_sm.jpg" align=center>
 <img src="/assets/ccnp_rs.jpg" align=center>
