@@ -46,10 +46,7 @@ google_analytics: UA-143827240-1
 # Build settings
 theme: minima
 
-# Gems
-gems:
-  - jekyll-last-modified-at
-  
+
 # Plugins
 plugins:
  - jekyll-feed
