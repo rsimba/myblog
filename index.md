@@ -7,4 +7,4 @@
 #
 layout: home
 ---
-<a href="https://www-ricardosimba-com.disqus.com/count.js{{ post.url }}#disqus_thread">0 Comments</a>
+<a href="https://www.ricardosimba.com.disqus.com/count.js{{ post.url }}#disqus_thread">0 Comments</a>
