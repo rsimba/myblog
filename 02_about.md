@@ -22,7 +22,7 @@ Chamo-me **Ricardo Simba**. Sou engenheiro de Redes IP focado em Fornecedores de
 
 O meu objectivo é de usar este site como uma plataforma para a partilha da informação técnica que aprendi e tenho aprendido ao longo da minha carreira profissional e espero que seja de algum proveito ao leitor final. Poderei escrever sobre muitas tecnologias mas o meu foco será Internet, Unix / Linux e Automação de Redes.
 
-Tenho estado a construir este site usando o [Jekyll](https://jekyllrb.com/) e alojado no [GitHub Pages](https://pages.github.com). Esta solução não só é mais barata mas também fornece design simples e limpo que permite maior concentração na leitura.
+Tenho estado a construir este site usando o [Jekyll](https://jekyllrb.com/) e alojado no [GitHub Pages](https://pages.github.com). Esta solução não só é mais barata mas também fornece um design simples e limpo que permite maior concentração na leitura.
 
 
 
