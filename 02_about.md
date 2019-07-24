@@ -18,6 +18,8 @@ Chamo-me **Ricardo Simba**. Sou engenheiro de Redes IP focado em Fornecedores de
 <img src="/assets/ccda.jpg" class="align-center">
 <img src="/assets/ccdp.jpg" class="align-center">
 
+Tenho os meus principais contactos no redapé deste site e o meu CV pode ser encontrado aqui.
+
 ## Sobre o blog
 
 O meu objectivo é de usar este site como uma plataforma para a partilha da informação técnica que aprendi e tenho aprendido ao longo da minha carreira profissional e espero que seja de algum proveito ao leitor final. Poderei escrever sobre muitas tecnologias mas o meu foco será Internet, Unix / Linux e Automação de Redes.
