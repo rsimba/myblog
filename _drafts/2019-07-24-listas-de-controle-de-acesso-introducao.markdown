@@ -9,10 +9,9 @@ Hoje iremos falar sobre as listas de acesso nos roteadores. O objectivo deste ar
 
 ##O que sao?
 
-As ACL são um conjunto de regras criadas nos equipamentos de rede (roteadores ou switches) que com base a determinados criterios, aplica uma determinada acção ao pacote ao entrar, sair ou passar por um roteadores ou switch.
+As ACL são um conjunto de regras criadas nos equipamentos de rede (roteadores ou switches) que com base a determinados criterios, aplica uma determinada acção ao pacote que entra, sai ou passa por estes equipamentos. Nos Roteadores, as ACLs sao normalmente descritas como IP ACL e Layer 2 ACL nos Switches, isto porque as ACL irao funcionar com a informacao dos cabeçalhos na camada 3 ou 2 do modelo OSI.
 
-Tal como foi dito acima, o nosso artigo de hoje concentra-se na implementacao das ACL no roteadores que como sabemos são equipamentos de redes que operam na camada 3 do modelo OSI. Neste caso as ACLs são normalmente descritas como IP ACLs.
-
+Visto que este artigo é sobre o IP ACL, vamos rapidamente falar sobre os endereços IP (*Internet Protocol*) para melhor entendermos o funcionamento das ACLs.
 
 ##Porque?
 
