@@ -2,7 +2,7 @@
 layout: "post"
 title: "Como Voltar A Usar O Telnet No iTerm2 (MacOS Mohave)"
 date: "2019-07-25 09:59"
-category: Telnet
+category: iTerm2
 ---
 O Telnet é o mais antigo protocolo da suite TCP/IP para acesso remoto e que por razões de seguranca tem sido substituido pelo SSH, mas apesar disso o Telnet é ainda usado ou suportado em muitos sistemas e um dos exemplos sao os varios emuladores de redes em a primeira opcao de ter acesso aos dispostivos é o Telnet.
 
