@@ -20,7 +20,7 @@ brew install telnet
 
 {% endhighlight %}
 
-Nas versões anteriores do macOS, o Telnet estava localizado no directório **/usr/bin/** e já na actual versão, encontramos no **/usr/local/bin/** e é por esta razão o iTerm2 está a reclamar.
+Nas versões anteriores do macOS, o Telnet estava localizado no directório **/usr/bin/** e já na actual versão, encontramos no **/usr/local/bin/** e é por esta razão que o iTerm2 está a reclamar.
 
 Feita a instalação e o Telnet testado com sucesso, a seguir instruimos o iTerm2 aonde deve procurar pelo Telnet e executar, para isso usamos a seguinte linha na secção dos perfis: **/usr/local/bin/telnet $$HOST$$ $$PORT$$**:
 <img src="/assets/iterm2_profiles.jpg" class="align-center">
