@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Como Voltar A Usar O Telnet Com O iTerm2 No macOS Mohave"
+title: "Como Voltar A Usar O Telnet Com O iTerm2 No macOS Mojave"
 date: "2019-07-25 09:59"
 categories: iTerm2
 comments: true
