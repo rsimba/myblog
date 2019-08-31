@@ -3,7 +3,7 @@ layout: "post"
 title: "Quando A Experiência De Um Percurso É Que Mais Importa"
 date: "2019-08-31 10:30"
 category: Fios
-author: Ricardo Simba
+comments: true
 ---
 O ano passado viajei pela primeira vez de carro ao Lubango, tendo saído de Luanda numa sexta-feita e regressado no domingo, viagem longa e estadia muito curta.
 
