@@ -351,3 +351,11 @@ Malembo#
 {% endhighlight %}
 
 <img src="/assets/routem_logical.jpg" class="align-center">
+
+# Conclusão
+
+O Routem é uma ferramenta extramente potente e flexível ao mesmo tempo (a minha preferida no VIRL) que nos permite recriar uma rede altamente escalável e gerar trafego como se de uma rede real se tratasse. Como podemos ver, conseguimos ter uma topologia fisica totalmente simplificada com apenas dois dispositivos mas com a possibilidade de expandir a topologia lógica de acordo a imaginação de cada um. O Routem não está de nenhuma forma limitado nos comandos aqui apresentados, existem outras várias opções para cada protocolo apresentado, rever a documentação oficial que vem acompanhado com o VIRL é sempre a melhor opção para opções de configuração mais avançadas.
+
+É possível ter quase a mesma funcionalidade no GNS3 usando o BIRD ou Quagga, com certeza um rápido Google apontará aos artigos apropriados.
+
+Abraços,
