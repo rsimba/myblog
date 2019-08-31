@@ -4,3 +4,349 @@ title: "Como Tornar O Seu Lab Mais Interessante Usando O Routem No VIRL"
 date: "2019-07-26 12:27"
 categories: Ferramentas
 ---
+Actualmente as opções de plataformas virtuais para laboratórios de redes e sistemas em geral são várias (VIRL, EVE-NG, GNS3, etc), cada uma com sua especificidade mas com um objectivo comum, de permitir-nos recriar diferentes redes IP para testes e deste modo antecipar possíveis problemas e resolve-los proactivamente, demostrar o valor de um determinado(a) produto ou solução antes da implementação do(a) mesmo(a) na rede em produção, estudar / praticar para um certificação, etc.
+
+Especificamente sobre o VIRL, que é um producto pago da Cisco, trás consigo uma ferramenta interessante e muito útil, que é o Routem (*Router Emulator*). Antes de definirmos o que é exactamente o Routem, vamos fazer e responder a seguinte pergunta para melhor contextuar… Digamos que queremos recriar a nossa rede quer consiste de 50 endereços IP da infraestructura, endereços usado nos roteadores para comunicarem entre si e usa o OSPF para conectividade entre todos os roteadores da rede, e 200 prefixos dos clientes que esta rede fornece diferentes serviços, usando o iBGP para o transporte dos prefixos dos clientes… Qual seria a forma mais fácil de recriarmos uma rede com o total de 250 prefixos usando o menor número possível de roteadores e interfaces?
+
+Existem várias opções (mais complexas) e uma delas envolve a criação de umas tantas interfaces Loopback em determinados roteadores e fazer redistribuição, usar scripts e etc. Com o VIRL, simplificamos o desenho usando o Routem. Na sua forma mais básica, podemos recriar esta rede usando apenas um roteador e um Contentor Linux *LXC*, aonde corre o Routem.
+
+De volta a definição, o Routem é uma aplicação criada pela Cisco com o objectivo de simular os actuais protocolos de roteamento (BGP, OSPF, ISIS, RIP) para anunciar rotas aos roteadores ou injectar rotas na nossa rede como se estivemos conectados à uma rede de larga escala ou mesmo como se estivéssemos ligados à um *ISP* e recebemos a tabela completa de roteamento do BGP. E não só, é também possível com o Routem gerar pacotes  ICMPs e/ou simular trafego Multicast.
+
+Quanto a configuração, o Routem usa uma configuração identifica ao do IOS que é feita num ficheiro. Começamos pela criação do ficheiro de configuração, que contém a configuração do protocolo que queremos simular e executamos o Routem indicando este mesmo ficheiro. Vamos exemplificar usando a seguinte topologia física: um roteador com uma ligação directa ao servidor (LXC) onde iremos configurar e executar o Routem; usaremos a subrede **10.1.0.0/30** na comunicação dos dois dispositivos, sendo o **.1** configurado na interface do roteador (chamado **Malembo**) e **.2** configurado na interface do servidor Routem respectivamente:
+
+<img src="/assets/Routem.jpg" class="align-center">
+
+Veremos a seguir ver dois exemplos de configuração com o BGP e OSPF, que se aplicam na rede apresentada no segundo parágrafo, neste caso o roteador Malembo está ligado e configurado numa rede com 50 endereços da infraestructura e 200 prefixos dos clientes.
+
+## Configuração Do OSPF No Routem E Roteador
+{% highlight routem %}
+
+tc@box:$ uname -a
+Linux box 4.14.10-tinycore
+
+tc@box:$ sudo ifconfig eth0 10.1.0.2 netmask 255.255.255.252
+tc@box:$ ifconfig
+eth0	 Link encap: Ethernet  HWaddr 50:00:00:01:00:00
+	     inet addr: 10.1.0.2  Bcast: 10.1.0.3  Mask: 255.255.255.252
+
+tc@box:$ ls
+routem
+
+tc@box:$ vi ospf.cfg
+
+router ospf
+neighbor 10.1.0.1 update-source 10.1.0.2
+networkmask 255.255.255.252
+router_id 2.2.2.2
+area 0.0.0.0
+link 1 172.16.1.0/30 25
+link 2 1.1.1.0/32 25
+debuglevel 1
+
+tc@box:$ ls
+ospf.cfg routem
+
+tc@box:$ sudo ./routem ospf.cfg
+
+ROUTEM:OSPF:(ID 0):HELLO recv from 10.1.0.1 to 224.0.0.5
+ROUTEM:OSPF:(ID 0)<-- HELLO (60 bytes) Sat Aug 31 16:12:21 2019
+
+{% endhighlight %}
+
+### Sobre A Configuração Do OSPF No Routem
+Criamos a seguir o ficheiro de configuração para o OSPF, incluido a sua configuração funcional:
+- **router ospf ** - indica o protocolo a ser usado
+- **neighbor x.x.x.x update-source x.x.x.x** - tal como no BGP, esta linha define o roteador com que iremos comunicar e a partir de que endereço / interface esta comunicação começar.
+- O **metworkmask, router_id x.x.x.x e area x.x.x.x ** são importantes no pacote Hello do OSPF para que a sessão seja estabelecida entre dois roteadores.
+- **link Y x.x.x.x/x Y** - define o tipo de rede (**internal, external, network, etc**) e a quantidade da mesma rede.
+- **debuglevel X** - activa o debug e define o tipo e detalhe da informação  a ser apresentada na altura da tentativa da estabelecer uma sessão, os números vão de 1 à 7. Por esta razão, vemos a seguinte mensagem: *ROUTEM:OSPF:(ID 0):HELLO recv….*
+
+## Configuração E Verificação Do OSPF No Roteador
+{% highlight router %}
+
+Malembo(config)#int eth0/0
+Malembo(config-if)#ip add 10.1.0.1 255.255.255.252
+Malembo(config-if)#
+Malembo(config-if)#
+Malembo(config-if)#do ping 10.1.0.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.0.2, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 1/1/2 ms
+Malembo(config-if)#ip os 1 are 0
+Malembo(config-if)#router os 1
+Malembo(config-router)#router
+Malembo(config-router)#router-id 1.1.1.1
+Malembo(config-router)#
+Malembo(config-router)#do deb ip os adj
+OSPF adjacency debugging is on
+Malembo(config-router)#
+*Aug 31 16:04:23.792: OSPF-1 ADJ   Et0/0: 2 Way Communication to 2.2.2.2, state 2WAY
+*Aug 31 16:04:24.629: %OSPF-5-ADJCHG: Process 1, Nbr 2.2.2.2 on Ethernet0/0 from LOADING to FULL, Loading Done
+Malembo(config-router)#do u all
+All possible debugging has been turned off
+Malembo(config-router)#end
+Malembo#
+Malembo#sh
+*Aug 31 16:06:40.391: %SYS-5-CONFIG_I: Configured from console by console
+Malembo#sh ip os int br
+Interface    PID   Area            IP Address/Mask    Cost  State Nbrs F/C
+Et0/0        1     0               10.1.0.1/30        10    DR    1/1
+Malembo#
+Malembo#sh ip os ne
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+2.2.2.2           0   FULL/DROTHER    00:00:37    10.1.0.2        Ethernet0/0
+Malembo#
+Malembo#sh ip os data
+
+            OSPF Router with ID (1.1.1.1) (Process ID 1)
+
+		Router Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+1.1.1.1         1.1.1.1         207         0x80000005 0x001BEA 1
+2.2.2.2         2.2.2.2         208         0x5D6A9A7B 0x00B460 51
+
+		Net Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+10.1.0.1        1.1.1.1         207         0x80000001 0x005DC3
+Malembo#
+Malembo#sh ip os data internal
+
+            OSPF Router with ID (1.1.1.1) (Process ID 1)
+
+		Stub Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Mask
+1.1.1.0         2.2.2.2         259         0x0        0x00CF0D /32
+1.1.1.1         2.2.2.2         259         0x0        0x00C516 /32
+1.1.1.2         2.2.2.2         259         0x0        0x00BB1F /32
+1.1.1.3         2.2.2.2         259         0x0        0x00B128 /32
+1.1.1.4         2.2.2.2         259         0x0        0x00A731 /32
+1.1.1.5         2.2.2.2         259         0x0        0x009D3A /32
+1.1.1.6         2.2.2.2         259         0x0        0x009343 /32
+1.1.1.7         2.2.2.2         259         0x0        0x00894C /32
+1.1.1.8         2.2.2.2         259         0x0        0x007F55 /32
+1.1.1.9         2.2.2.2         259         0x0        0x00755E /32
+1.1.1.10        2.2.2.2         259         0x0        0x006B67 /32
+1.1.1.11        2.2.2.2         259         0x0        0x006170 /32
+1.1.1.12        2.2.2.2         259         0x0        0x005779 /32
+1.1.1.13        2.2.2.2         259         0x0        0x004D82 /32
+1.1.1.14        2.2.2.2         259         0x0        0x00438B /32
+1.1.1.15        2.2.2.2         259         0x0        0x003994 /32
+1.1.1.16        2.2.2.2         259         0x0        0x002F9D /32
+1.1.1.17        2.2.2.2         259         0x0        0x0025A6 /32
+1.1.1.18        2.2.2.2         259         0x0        0x001BAF /32
+1.1.1.19        2.2.2.2         259         0x0        0x0011B8 /32
+1.1.1.20        2.2.2.2         259         0x0        0x0007C1 /32
+1.1.1.21        2.2.2.2         259         0x0        0x00FCCA /32
+1.1.1.22        2.2.2.2         259         0x0        0x00F2D3 /32
+1.1.1.23        2.2.2.2         259         0x0        0x00E8DC /32
+1.1.1.24        2.2.2.2         259         0x0        0x00DEE5 /32
+10.1.0.3        1.1.1.1         369         0x0        0x005385 /30
+172.16.1.3      2.2.2.2         259         0x0        0x0033EE /30
+172.16.1.7      2.2.2.2         259         0x0        0x000B13 /30
+172.16.1.11     2.2.2.2         259         0x0        0x00E237 /30
+172.16.1.15     2.2.2.2         259         0x0        0x00BA5B /30
+172.16.1.19     2.2.2.2         259         0x0        0x00927F /30
+172.16.1.23     2.2.2.2         259         0x0        0x006AA3 /30
+172.16.1.27     2.2.2.2         259         0x0        0x0042C7 /30
+172.16.1.31     2.2.2.2         259         0x0        0x001AEB /30
+172.16.1.35     2.2.2.2         259         0x0        0x00F110 /30
+172.16.1.39     2.2.2.2         259         0x0        0x00C934 /30
+172.16.1.43     2.2.2.2         259         0x0        0x00A158 /30
+172.16.1.47     2.2.2.2         259         0x0        0x00797C /30
+172.16.1.51     2.2.2.2         259         0x0        0x0051A0 /30
+172.16.1.55     2.2.2.2         259         0x0        0x0029C4 /30
+172.16.1.59     2.2.2.2         259         0x0        0x0001E8 /30
+172.16.1.63     2.2.2.2         259         0x0        0x00D80D /30
+172.16.1.67     2.2.2.2         259         0x0        0x00B031 /30
+172.16.1.71     2.2.2.2         259         0x0        0x008855 /30
+172.16.1.75     2.2.2.2         259         0x0        0x006079 /30
+172.16.1.79     2.2.2.2         259         0x0        0x00389D /30
+172.16.1.83     2.2.2.2         259         0x0        0x0010C1 /30
+172.16.1.87     2.2.2.2         259         0x0        0x00E7E5 /30
+172.16.1.91     2.2.2.2         259         0x0        0x00BF0A /30
+172.16.1.95     2.2.2.2         259         0x0        0x00972E /30
+172.16.1.99     2.2.2.2         259         0x0        0x006F52 /30
+
+		Router Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+1.1.1.1         1.1.1.1         258         0x80000005 0x001BEA 1
+2.2.2.2         2.2.2.2         259         0x5D6A9A7B 0x00B460 51
+
+		Net Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+10.1.0.1        1.1.1.1         258         0x80000001 0x005DC3
+Malembo#
+Malembo#sh ip ro os
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 25 subnets
+O        1.1.1.0 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.1 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.2 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.3 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.4 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.5 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.6 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.7 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.8 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.9 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.10 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.11 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.12 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.13 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.14 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.15 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.16 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.17 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.18 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.19 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.20 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.21 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.22 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.23 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        1.1.1.24 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+      172.16.0.0/30 is subnetted, 25 subnets
+O        172.16.1.0 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.4 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.8 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.12 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.16 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.20 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.24 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.28 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.32 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.36 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.40 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.44 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.48 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.52 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.56 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.60 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.64 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.68 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.72 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.76 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.80 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.84 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.88 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.92 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+O        172.16.1.96 [110/10] via 10.1.0.2, 00:05:30, Ethernet0/0
+Malembo#
+Malembo#sh ip ro 1.1.1.1
+Routing entry for 1.1.1.1/32
+  Known via "ospf 1", distance 110, metric 10, type intra area
+  Last update from 10.1.0.2 on Ethernet0/0, 00:06:45 ago
+  Routing Descriptor Blocks:
+  * 10.1.0.2, from 2.2.2.2, 00:06:45 ago, via Ethernet0/0
+      Route metric is 10, traffic share count is 1
+Malembo#
+
+{% endhighlight %}
+
+## Configuração Do BGP No Routem
+
+{% highlight brew %}
+
+tc@box:$ vi bgp.cfg
+
+router bgp 1122
+neighbor 10.1.0.1 remote-as 1122
+neighbor 10.1.0.1 update-source 10.1.0.2
+network 1 192.168.0.0/24 50
+network 2 192.168.1.0/24 50
+network 3 192.168.2.0/24 50
+network 4 192.168.3.0/24 50
+debuglevel 1
+
+tc@box:$ sudo ./routem bgp.cfg
+
+ROUTEM:-->Send KEEPALIVE (0 sec and 97126 usec late)
+ROUTEM:Sat Aug 31 16:34:21 2019
+ROUTEM:[id=0, local=10.1.0.2(33775), peer=10.1.0.1(179)]
+ROUTEM:BGP:Established 240 secs, connect:1, ht:145, TCP rcvwnd:32768
+
+{% endhighlight %}
+
+### Sobre A Configuração Do BGP No Routem
+A configuração do BGP no Routem é similar a do OSPF, e restantes protocolos. Diferente neste caso, é o comando **network Y X.X.X.X/X Y** ao invés do **link Y X.X.X.X/X Y** no OSPF.
+
+## Configuração E Verificação Do BGP No Roteador
+
+{% highlight router %}
+
+router bgp 1122
+ bgp log-neighbor-changes
+ neighbor 10.1.0.2 remote-as 1122
+ neighbor 10.1.0.2 update-source Ethernet0/0
+Malembo(config-router)#end
+Malembo#
+*Aug 31 16:28:23.929: %SYS-5-CONFIG_I: Configured from console by console
+Malembo#
+*Aug 31 16:28:43.114: %BGP-5-ADJCHANGE: neighbor 10.1.0.2 Up
+Malembo#
+Malembo#sh ip bg summary
+BGP router identifier 10.1.0.1, local AS number 1122
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.0.2        4         1122       4       4      307    0    0 00:00:12      200
+Malembo#
+Malembo#sh ip bg
+BGP table version is 307, local router ID is 10.1.0.1
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>i 192.168.0.0      10.1.0.2                      100      0 i
+ *>i 192.168.1.0      10.1.0.2                      100      0 i
+ *>i 192.168.2.0      10.1.0.2                      100      0 i
+ *>i 192.168.3.0      10.1.0.2                      100      0 i
+ *>i 192.168.4.0      10.1.0.2                      100      0 i
+ *>i 192.168.5.0      10.1.0.2                      100      0 i
+ *>i 192.168.6.0      10.1.0.2                      100      0 i
+ *>i 192.168.7.0      10.1.0.2                      100      0 i
+ *>i 192.168.8.0      10.1.0.2                      100      0 i
+ *>i 192.168.9.0      10.1.0.2                      100      0 i
+ *>i 192.168.10.0     10.1.0.2                      100      0 i
+ *>i 192.168.11.0     10.1.0.2                      100      0 i
+ *>i 192.168.12.0     10.1.0.2                      100      0 i
+ *>i 192.168.13.0     10.1.0.2                      100      0 i
+ *>i 192.168.14.0     10.1.0.2                      100      0 i
+ --More--
+Malembo#
+Malembo#sh ip ro bgp
+
+Gateway of last resort is not set
+
+B     192.168.0.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.1.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.2.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.3.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.4.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.5.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.6.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.7.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.8.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.9.0/24 [200/0] via 10.1.0.2, 00:01:33
+B     192.168.10.0/24 [200/0] via 10.1.0.2, 00:01:33
+ --More--
+Malembo#
+Malembo#sh ip bg 192.168.1.0
+BGP routing table entry for 192.168.1.0/24, version 509
+Paths: (1 available, best #1, table default)
+  Not advertised to any peer
+  Refresh Epoch 1
+  Local
+    10.1.0.2 from 10.1.0.2 (10.1.0.2)
+      Origin IGP, localpref 100, valid, internal, best
+      rx pathid: 0, tx pathid: 0x0
+Malembo#
+
+{% endhighlight %}
+
+<img src="/assets/routem_logical.jpg" class="align-center">
