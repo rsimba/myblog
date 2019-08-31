@@ -5,9 +5,9 @@ date: "2019-08-31 12:27"
 categories: Ferramentas
 comments: true
 ---
-Actualmente as opções de plataformas virtuais para laboratórios de redes e sistemas em geral são várias (VIRL, EVE-NG, GNS3, etc), cada uma com sua especificidade mas com um objectivo comum, de permitir-nos recriar diferentes redes IP para testes e deste modo antecipar possíveis problemas e resolve-los proactivamente, demostrar o valor de um determinado(a) produto ou solução antes da implementação do(a) mesmo(a) na rede em produção, estudar / praticar para um certificação, etc.
+Actualmente as opções de plataformas virtuais para laboratórios de redes e sistemas em geral são várias (VIRL, EVE-NG, GNS3, etc), cada uma com sua especificidade mas com um objectivo comum, de permitir-nos recriar diferentes redes IP para testes e deste modo antecipar possíveis problemas e resolve-los proactivamente; demostrar o valor de um determinado(a) produto ou solução antes da implementação do(a) mesmo(a) na rede em produção; estudar / praticar para uma certificação, etc.
 
-Especificamente sobre o VIRL, que é um producto pago da Cisco, trás consigo uma ferramenta interessante e muito útil, que é o Routem (*Router Emulator*). Antes de definirmos o que é exactamente o Routem, vamos fazer e responder a seguinte pergunta para melhor contextuar… Digamos que queremos recriar a nossa rede quer consiste de 50 endereços IP da infraestructura, endereços usado nos roteadores para comunicarem entre si e usa o OSPF para conectividade entre todos os roteadores da rede, e 200 prefixos dos clientes que esta rede fornece diferentes serviços, usando o iBGP para o transporte dos prefixos dos clientes… Qual seria a forma mais fácil de recriarmos uma rede com o total de 250 prefixos usando o menor número possível de roteadores e interfaces?
+Especificamente sobre o VIRL, que é um producto pago da Cisco, trás consigo uma ferramenta interessante e muito útil, que é o Routem (*Router Emulator*). Antes de definirmos o que é exactamente, vamos fazer e responder a seguinte pergunta para melhor contextuar… Digamos que queremos recriar a nossa rede quer consiste de 50 endereços IP de infraestructura, endereços usado nos roteadores para comunicarem entre si e usa o OSPF para conectividade entre todos os roteadores da rede, e 200 prefixos dos clientes que esta rede fornece diferentes serviços, usando o iBGP para o transporte dos prefixos dos clientes… Qual seria a forma mais fácil de recriarmos fisicamente uma rede com o total de 250 prefixos usando o menor número possível de roteadores e interfaces?
 
 Existem várias opções (mais complexas) e uma delas envolve a criação de umas tantas interfaces Loopback em determinados roteadores e fazer redistribuição, usar scripts e etc. Com o VIRL, simplificamos o desenho usando o Routem. Na sua forma mais básica, podemos recriar esta rede usando apenas um roteador e um Contentor Linux *LXC*, aonde corre o Routem.
 
@@ -17,7 +17,7 @@ Quanto a configuração, o Routem usa uma configuração identifica ao do IOS qu
 
 <img src="/assets/Routem.jpg" class="align-center">
 
-Veremos a seguir ver dois exemplos de configuração com o BGP e OSPF, que se aplicam na rede apresentada no segundo parágrafo, neste caso o roteador Malembo está ligado e configurado numa rede com 50 endereços da infraestructura e 200 prefixos dos clientes.
+Veremos a seguir dois exemplos de configuração com o BGP e OSPF, que se aplicam na rede apresentada no segundo parágrafo, neste caso o roteador Malembo está ligado e configurado numa rede com 50 endereços da infraestructura e 200 prefixos dos clientes.
 
 ## Configuração Do OSPF No Routem E Roteador
 {% highlight routem %}
@@ -55,9 +55,9 @@ ROUTEM:OSPF:(ID 0)<-- HELLO (60 bytes) Sat Aug 31 16:12:21 2019
 {% endhighlight %}
 
 ### Sobre A Configuração Do OSPF No Routem
-Criamos a seguir o ficheiro de configuração para o OSPF, incluido a sua configuração funcional:
+Criamos a seguir o ficheiro de configuração para o OSPF, inclundo a sua configuração funcional:
 - **router ospf ** - indica o protocolo a ser usado
-- **neighbor x.x.x.x update-source x.x.x.x** - tal como no BGP, esta linha define o roteador com que iremos comunicar e a partir de que endereço / interface esta comunicação começar.
+- **neighbor x.x.x.x update-source x.x.x.x** - tal como no BGP, esta linha define o roteador com que iremos comunicar e a partir de que endereço / interface esta comunicação deve ter início.
 - O **metworkmask, router_id x.x.x.x e area x.x.x.x ** são importantes no pacote Hello do OSPF para que a sessão seja estabelecida entre dois roteadores.
 - **link Y x.x.x.x/x Y** - define o tipo de rede (**internal, external, network, etc**) e a quantidade da mesma rede.
 - **debuglevel X** - activa o debug e define o tipo e detalhe da informação  a ser apresentada na altura da tentativa da estabelecer uma sessão, os números vão de 1 à 7. Por esta razão, vemos a seguinte mensagem: *ROUTEM:OSPF:(ID 0):HELLO recv….*
@@ -350,11 +350,13 @@ Malembo#
 
 {% endhighlight %}
 
+Por exemplo ao olharmos para os comandos e prefixos anunciados ao roteador pelo Routem, podemos facilmente deduzir que possilvemente se esteja a tratar de uma rede igual a apresentada abaixo.
+
 <img src="/assets/routem_logical.jpg" class="align-center">
 
 # Conclusão
 
-O Routem é uma ferramenta extramente potente e flexível ao mesmo tempo (a minha preferida no VIRL) que nos permite recriar uma rede altamente escalável e gerar trafego como se de uma rede real se tratasse. Como podemos ver, conseguimos ter uma topologia fisica totalmente simplificada com apenas dois dispositivos mas com a possibilidade de expandir a topologia lógica de acordo a imaginação de cada um. O Routem não está de nenhuma forma limitado nos comandos aqui apresentados, existem outras várias opções para cada protocolo apresentado, rever a documentação oficial que vem acompanhado com o VIRL é sempre a melhor opção para opções de configuração mais avançadas.
+O Routem é uma ferramenta extramente potente e flexível ao mesmo tempo (a minha preferida no VIRL) que nos permite recriar uma rede altamente escalável e gerar trafego como se de uma rede real se tratasse. Como podemos ver, conseguimos ter uma topologia física totalmente simplificada com apenas dois dispositivos mas com a possibilidade de expandir a topologia lógica de acordo a imaginação de cada um. O Routem não está de nenhuma forma limitado nos comandos aqui apresentados, existem muitas mais opções para cada protocolo suportado, rever a documentação oficial que vem acompanhado com o VIRL é sempre a melhor opção para opções de configuração mais avançadas.
 
 É possível ter quase a mesma funcionalidade no GNS3 usando o BIRD ou Quagga, com certeza um rápido Google apontará aos artigos apropriados.
 
