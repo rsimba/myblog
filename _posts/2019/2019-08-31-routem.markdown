@@ -19,7 +19,7 @@ Quanto a configuração, o Routem usa uma configuração identifica ao do IOS qu
 
 Veremos a seguir dois exemplos de configuração com o BGP e OSPF, que se aplicam na rede apresentada no segundo parágrafo, neste caso o roteador Malembo está ligado e configurado numa rede com 50 endereços da infraestructura e 200 prefixos dos clientes.
 
-## Configuração Do OSPF No Routem E Roteador
+## Configuração Do Sistema E OSPF No Routem
 {% highlight routem %}
 
 tc@box:$ uname -a
@@ -54,8 +54,22 @@ ROUTEM:OSPF:(ID 0)<-- HELLO (60 bytes) Sat Aug 31 16:12:21 2019
 
 {% endhighlight %}
 
-### Sobre A Configuração Do OSPF No Routem
-Criamos a seguir o ficheiro de configuração para o OSPF, inclundo a sua configuração funcional:
+### Sobre Configuração Do Sistema E OSPF No Routem
+Estando num sistema Linux, começamos por verificar a informação geral do sistema usando o comando:
+- **uname -a**
+A seguir configuramos a interface Ethernet que fisicamente liga ao roteador, usando o comando:
+- **ifconfig eth0 10.1.0.2 net mask 255.255.255.252**
+Como dito acima, o Routem é uma aplicação que é instalada e corre no sistema Linux (TinyCore no nosso caso) e ao usarmos o comando **ls -la**, vemos que é um ficheiro executável pertencente ao super user, root:
+
+{% highlight linux %}
+
+tc@box:$ ls -la
+
+-rwxrwxrwx  1  root  staff 2828382  4  2018 routem
+
+{% endhighlight %}
+
+Criamos a seguir o ficheiro de configuração para o OSPF, incluindo a sua configuração funcional:
 - **router ospf ** - indica o protocolo a ser usado
 - **neighbor x.x.x.x update-source x.x.x.x** - tal como no BGP, esta linha define o roteador com que iremos comunicar e a partir de que endereço / interface esta comunicação deve ter início.
 - O **metworkmask, router_id x.x.x.x e area x.x.x.x ** são importantes no pacote Hello do OSPF para que a sessão seja estabelecida entre dois roteadores.
@@ -63,6 +77,7 @@ Criamos a seguir o ficheiro de configuração para o OSPF, inclundo a sua config
 - **debuglevel X** - activa o debug e define o tipo e detalhe da informação  a ser apresentada na altura da tentativa da estabelecer uma sessão, os números vão de 1 à 7. Por esta razão, vemos a seguinte mensagem: *ROUTEM:OSPF:(ID 0):HELLO recv….*
 
 ## Configuração E Verificação Do OSPF No Roteador
+
 {% highlight router %}
 
 Malembo(config)#int eth0/0
