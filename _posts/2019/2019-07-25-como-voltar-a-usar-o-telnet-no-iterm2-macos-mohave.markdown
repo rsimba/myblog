@@ -4,6 +4,7 @@ title: "Como Voltar A Usar O Telnet Com O iTerm2 No macOS Mojave"
 date: "2019-07-25 09:59"
 categories: Geral
 comments: true
+author: Ricardo Simba
 ---
 O Telnet é o mais antigo protocolo da suite TCP/IP usado para o acesso remoto aos dispositivos de rede e que por razões de segurança tem sido substituido pelo SSH. Mas apesar disso, o Telnet é ainda usado ou suportado em muitos sistemas e um dos exemplos são os vários emuladores de redes em que a primeira opção de ter acesso aos roteadores e switches dos labs é usando o Telnet.
 
