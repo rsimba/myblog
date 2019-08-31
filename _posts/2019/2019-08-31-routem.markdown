@@ -1,8 +1,9 @@
 ---
 layout: "post"
 title: "Como Tornar O Seu Lab Mais Interessante Usando O Routem No VIRL"
-date: "2019-07-26 12:27"
+date: "2019-08-31 12:27"
 categories: Ferramentas
+comments: true
 ---
 Actualmente as opções de plataformas virtuais para laboratórios de redes e sistemas em geral são várias (VIRL, EVE-NG, GNS3, etc), cada uma com sua especificidade mas com um objectivo comum, de permitir-nos recriar diferentes redes IP para testes e deste modo antecipar possíveis problemas e resolve-los proactivamente, demostrar o valor de um determinado(a) produto ou solução antes da implementação do(a) mesmo(a) na rede em produção, estudar / praticar para um certificação, etc.
 
