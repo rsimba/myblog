@@ -58,8 +58,10 @@ ROUTEM:OSPF:(ID 0)<-- HELLO (60 bytes) Sat Aug 31 16:12:21 2019
 ### Sobre Configuração Do Sistema E OSPF No Routem
 Estando num sistema Linux, começamos por verificar a informação geral do sistema usando o comando:
 - **uname -a**
+
 A seguir configuramos a interface Ethernet que fisicamente liga ao roteador, usando o comando:
 - **ifconfig eth0 10.1.0.2 net mask 255.255.255.252**
+
 Como dito acima, o Routem é uma aplicação que é instalada e corre no sistema Linux (TinyCore no nosso caso) e ao usarmos o comando **ls -la**, vemos que é um ficheiro executável pertencente ao super user, root:
 
 {% highlight linux %}
