@@ -26,4 +26,4 @@ Tenho estado a construir este site usando o [Jekyll](https://jekyllrb.com/) e al
 
 
 
-***Por favor, lembre-se que os artigos aqui publicados sao apenas opinões pessoais e da minha inteira responsabilidade.***
+***Por favor, lembre-se que os artigos aqui publicados sao apenas opiniões pessoais e da minha inteira responsabilidade.***
