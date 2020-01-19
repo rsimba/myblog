@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "No Ano, Novos Desafios"
+title: "Novo Ano, Novos Desafios"
 date: "2020-01-19 21:58"
 categories: Fios
 comments: true
