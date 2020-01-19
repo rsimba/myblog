@@ -2,7 +2,7 @@
 layout: "post"
 title: "Como Voltar A Usar O Telnet Com O iTerm2 No macOS Mojave"
 date: "2019-07-25 09:59"
-categories: Geral
+categories: Ferramentas
 comments: true
 author: Ricardo Simba
 ---
