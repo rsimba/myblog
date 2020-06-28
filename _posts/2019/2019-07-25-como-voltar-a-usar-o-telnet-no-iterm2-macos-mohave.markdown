@@ -6,11 +6,11 @@ categories: Ferramentas
 comments: true
 author: Ricardo Simba
 ---
-O Telnet é o mais antigo protocolo da suite TCP/IP usado para o acesso remoto aos dispositivos de rede e que por razões de segurança tem sido substituido pelo SSH. Mas apesar disso, o Telnet é ainda usado ou suportado em muitos sistemas e um dos exemplos são os vários emuladores de redes em que a primeira opção de ter acesso aos roteadores e switches dos labs é usando o Telnet.
+O Telnet é o mais antigo protocolo da suite TCP/IP usado para o acesso remoto aos dispositivos de rede e que por razões de segurança tem sido substituído pelo SSH. Mas apesar disso, o Telnet é ainda usado ou suportado em muitos sistemas e um dos exemplos são os vários emuladores de redes em que a primeira opção de ter acesso aos roteadores e switches dos labs é usando o Telnet.
 
 Os Sistemas Operativos da Apple são também conhecidos pelo seu nível de segurança e foi por esta razão que decidiram remover completamente o Telnet do **macOS Mojave**. Vamos a seguir ver como trazemos de volta o Telnet neste sistema e usa-lo com o iTerm2.
 
-O **iTerm2** é um dos terminais *Open Source* para os Macs e podemos ver pela mensagem abaixo o que acontece quando o iTerm2 é instruido em usar o Telnet mas não encontra o mesmo:
+O **iTerm2** é um dos terminais *Open Source* para os Macs e podemos ver pela mensagem abaixo o que acontece quando o iTerm2 é instruído em usar o Telnet mas não encontra o mesmo:
 <img src="/assets/iterm2_telnet_msg.jpg" class="align-center">
 
 Existem diferentes soluções para este problema e vamos aqui ver a mais simples. Independente da solução, começamos com a instalação do Telnet usando o **Homebrew**:
