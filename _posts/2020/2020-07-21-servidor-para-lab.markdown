@@ -32,7 +32,7 @@ No meu caso, acabei por usar um IBM System x3650 M4 que tem as seguintes princip
 - Suporte máximo de 28.4TB de armazenamento
 - Suporte mínimo de 4 portas de 1-GigabitEthernet
 
-<img src="/assets/s1.jpg" class="align-center">
+<img src="/assets/s1.png" class="align-center">
 <img src="/assets/s2.jpg" class="align-center">
 <img src="/assets/s3.jpg" class="align-center">
 
