@@ -24,7 +24,7 @@ No geral, os servidores são equipamentos caros, contudo, é possível comprar s
 
 Na escolha de servidores para o uso das plataformas virtuais de redes, devemos levar em considerações as seguintes importantes características: CPU (a quantidade de CPUs físicos e a quantidade de cores por CPU, assim como a tecnologia de virtualização usada nestes processadores), memória e armazenamento.
 
-No meu caso, acabei por usar um IBM System x3650 M4 que tem as seguintes principais características físicas:
+No meu caso, acabei por usar um [IBM System x3650 M4](https://lenovopress.com/tips0850-system-x3650-m4-e5-2600-v2) que tem as seguintes principais características físicas:
 - Suporte máximo de 2 CPUs físicos
 	- Suporte aos processadores Intel Xeon E5-2600v2, máximo de 12 cores por CPU.
 - Suporte para 24 memórias físicas
