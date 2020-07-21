@@ -32,9 +32,6 @@ No meu caso, acabei por usar um IBM System x3650 M4 que tem as seguintes princip
 - Suporte máximo de 28.4TB de armazenamento
 - Suporte mínimo de 4 portas de 1-GigabitEthernet
 
-<img src="/assets/s1.png" class="align-center">
-
-
 **Nota**. Boa parte dos processadores Intel (incluindo os da família Xeon E5-2600v2) o suportam a tecnologia *Hyper-Threading* que na pratica duplicate o numero total de cores. Isto é, caso um processador suporte 10 cores, com o *Hyper-Threading* este número é duplicado por dois, 20.
 
 Apesar deste servidor ter o máximo das características listadas acima, a actual configuração dependerá de vários factores. No meu caso, tenho o servidor configurado da seguinte forma:
