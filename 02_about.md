@@ -14,8 +14,8 @@ Este é o meu blog pessoal, seja bem-vindo.
 Chamo-me **Ricardo Simba**. Sou engenheiro de Redes focado em *Service Providers* e actualmente trabalho para a [Cisco](https://www.cisco.com/) como System Engineer. Oficialmente, comecei a minha carreira profissional em 2006 como Administrador de Redes e Sistemas no maior e único Fornecedor de Serviço de Internet por cabo em Angola. Minha experiência e interesse é resumida em Internet, Sistemas **Unix** / Linux e Automação de Redes. Ter certificações técnicas como parte do meu portfólio profissional, foi uma das melhores decisões que temei ao longo da minha carreira profissional e acredito fortemente no valor das mesmas, principalmente quando são bem feitas. Actualmente tenho as seguintes principais certificações:
 
 <img src="/assets/ccna_sm.jpg" class="align-center">
-<img src="/assets/ccnp_rs.jpg" class="align-center">
 <img src="/assets/ccda.jpg" class="align-center">
+<img src="/assets/ccnp_rs.jpg" class="align-center">
 <img src="/assets/ccdp.jpg" class="align-center">
 
 ## Sobre o blog
