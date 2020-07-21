@@ -18,6 +18,7 @@ Chamo-me **Ricardo Simba**. Sou engenheiro de Redes focado em *Service Providers
 <img src="/assets/ccnp_rs.jpg" class="align-center">
 <img src="/assets/ccdp.jpg" class="align-center">
 
+
 ## Sobre o blog
 
 O meu objectivo é de usar este site como uma plataforma para a partilha da informação técnica que aprendi e tenho aprendido ao longo da minha carreira profissional e espero que seja de algum proveito ao leitor final.
