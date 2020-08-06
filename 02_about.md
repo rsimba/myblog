@@ -17,13 +17,7 @@ Chamo-me **Ricardo Simba**. Sou engenheiro de Redes focado em *Service Providers
 <img src="/assets/ccnp_rs.jpg" class="align-center">
 <img src="/assets/ccda.jpg" class="align-center">
 <img src="/assets/ccdp.jpg" class="align-center">
-<p> </p>
-<ul><img src="/assets/jncia.jpg" class="align=left"</ul>
-<img src="/assets/jncis.jpg" class="align=center" </ul>
-<img src="/assets/jncip.jpg" class="align=center"</ul>
-<p> </p>
-<ul><img src="/assets/cesilver.jpg" class="align=center"</ul>
-<img src="/assets/cegold.jpg" class="align=center"</ul>
+
 
 
 
