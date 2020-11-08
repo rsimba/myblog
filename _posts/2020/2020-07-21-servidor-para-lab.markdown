@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Servidor Para Lab"
+title: "Servidor para Lab"
 date: "2020-07-21 10:17"
 author: Ricardo Simba
 comments: true
