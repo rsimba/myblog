@@ -2,7 +2,7 @@
 layout: "post"
 title: "Use o LinkedIn de Forma Diferente"
 date: "2020-10-25 20:58"
-auther: Ricardo Simba
+author: Simba, R. H. N.
 comments: true
 category: Carreira
 ---
