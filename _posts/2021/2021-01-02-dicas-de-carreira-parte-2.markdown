@@ -6,7 +6,6 @@ categories: Carreira
 comments: true
 author: Simba, R. H. N.
 ---
-# Dicas de Carreira, Parte 2
 Na [primeira parte](https://www.ricardosimba.com/carreira/2020/03/25/dicas-de-carreira-parte-1.html) desta série, falamos sobre três requisitos ou princípios que se forem bem aplicados podem nos ajudar a construir uma carreira profissional diferente. Concluímos a série com a segunda parte em iremos ver na prática a aplicação dos princípios discutidos anteriormente.
 
 ## Faça uma autoavaliação
