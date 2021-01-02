@@ -2,7 +2,7 @@
 layout: "post"
 title: "Servidor para Lab"
 date: "2020-07-21 10:17"
-author: Ricardo Simba
+author: Simba, R. H. N.
 comments: true
 category: Geral
 ---

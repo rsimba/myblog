@@ -4,7 +4,7 @@ title: "Bem-vindo"
 date: "2019-07-14 10:11"
 categories: Geral
 comments: true
-author: Ricardo Simba
+author: Simba, R. H. N.
 ---
 
 Este é o meu primeiro de muitos *posts*.

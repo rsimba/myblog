@@ -2,7 +2,7 @@
 layout: "post"
 title: "O Contexto das Coisas"
 date: "2020-10-21 09:30"
-author: Ricardo Simba
+author: Simba, R. H. N.
 comments: true
 category: Carreira
 ---
