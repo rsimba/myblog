@@ -13,7 +13,7 @@ Nos últimos anos, falar em público, exactamente fazer apresentações técnica
 - Saber e entender a fundo o assunto a ser apresentado e saber resumir o mesmo.
 - Entender a audiência.
 
-## Habituarmos à minha voz
+## Habituar-me à minha voz
 Termos uma conversa descontraída com uma ou mais pessoas é totalmente diferente de estarmos perante uma sala cheia de pessoas, atenta no que iremos falar. Nestes ambientes, somos obrigados a encarar a nossa voz de forma totalmente diferente, porque no enorme silencio, será a única voz que iremos ouvir e prestar atenção na maior parte do tempo. Caso não estivermos habituados ou confortáveis com a nossa voz, infelizmente acabará por ser uma fonte de distração e talvez afectando toda apresentação.
 
 Para ultrapassarmos isso, devemos praticar sempre antes de qualquer sessão de fala ao publico. Devemos fazer a apresentação completa, talvez em frente de um espelho e ao mesmo tempo nos gravarmos. A seguir, devemos ouvir a gravação várias vezes até nos sentirmos confidentes com a nossa voz e com o assunto que iremos abordar.
