@@ -22,7 +22,7 @@ A forma mais simples de aprender uma língua é estar num ambiente em que a mesm
 - Etc.
 
 ## Programas
-Para alem das técnicas descritas acima, usei também dois principais programas que me ajudaram muito. O primeiro, isto em 2008, foi o Speed English, que era um conjunto de dois livros e diferentes CDs com áudios, comercializado na altura pela Shoprite. O segundo, foi o [English as a Second Language Podcast] que ouvi religiosamente todos os dias, do primeiro ao último episódio em 2014.
+Para alem das técnicas descritas acima, usei também dois principais programas que me ajudaram muito. O primeiro, isto em 2008, foi o Speed English, que era um conjunto de dois livros e diferentes CDs com áudios, comercializado na altura pela Shoprite. O segundo, foi o [English as a Second Language Podcast](https://en.wikipedia.org/wiki/English_as_a_Second_Language_Podcast#:~:text=English%20as%20a%20Second%20Language%20(ESL)%20Podcast%20is%20a%20web,based%20English%20language%2Dlearning%20podcast.&text=ESL%20Podcast%20produces%20four%20main,English%20learning%2C%20and%20specialty%20courses) que ouvi religiosamente todos os dias, do primeiro ao último episódio em 2014.
 
 Não apenas estes dois programas, mas também tive sempre amigos que faziam ou fizeram o curso de Inglês e que sempre me emprestaram os seus materiais de estudos.
 
