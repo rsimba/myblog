@@ -23,7 +23,7 @@ Para ultrapassarmos isso, devemos praticar sempre antes de qualquer sessão de f
 
 Normalmente estas sessões, são dividas em duas partes: a apresentação em si e perguntas e repostas no fim da apresentação. Durante a apresentação, procuramos resumir de forma compreensível o assunto para a audiência; e durante a sessão de perguntas e repostas, respondemos as perguntas da audiência para melhor explicar o que inicialmente não foi claro. Ao termos o entendimento e domínio do assunto, estaremos capazes de responder qualquer pergunta relacionada ao assunto que irão surgir depois da apresentação.
 
-## A audiência
+## Entender a audiência
 A audiência normalmente é dinâmica, logo no princípio ela poderá parecer passiva, activa, ou hostil, o que pode muitas vezes intimidar o apresentador. Dinâmica porque ao longo apresentação ela pode mudar de passiva para activa, passiva para hostil, e vice-versa, com base ao conteúdo e a forma que a apresentação estiver a decorrer.
 
 O apresentador é quem deve influenciar a reação da audiência, o tom e velocidade da voz, a linguagem corporal, etc. são dos vários factores que podem influenciar a reação ou comportamento da audiência, e esta por sua vez influenciar também o apresentador. É importante termos técnicas próprias sobre como olhamos para a plateia para evitarmos que ela faça leituras erradas ao longo da apresentação e evitarmos perdermos o controle da apresentação.
