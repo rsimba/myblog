@@ -2,7 +2,7 @@
 layout: "post"
 title: "Novo Ano, Novos Desafios"
 date: "2020-01-19 21:58"
-categories: Carreira
+categories: Geral
 comments: true
 author: Simba, R. H. N.
 ---
