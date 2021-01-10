@@ -4,7 +4,7 @@ title: "Servidor para Lab"
 date: "2020-07-21 10:17"
 author: Simba, R. H. N.
 comments: true
-category: ferramentas
+category: Ferramentas
 ---
 Já faz algum tempo desde que me desfiz do meu pequeno lab, constituído na altura por uns poucos switches e roteadores da Cisco. Desde então, tenho feito o uso quase exclusivo de plataformas virtuais a partir de um portátil, principalmente para pequenos e rápidos testes.
 
