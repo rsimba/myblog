@@ -6,7 +6,7 @@ author: Simba, R. H. N.
 comments: true
 category: Service Provider
 ---
-Do ponto de vista estrutural, a Internet é organizada de forma hierárquica e composta por vários componentes fundamentais interligados entre si, um desses componentes são os Operadores de Serviços de Internet ou **Internet Service Provider **(ISPs) como são tradicionalmente chamados em Inglês.
+Do ponto de vista estrutural, a Internet é organizada de forma hierárquica e composta por vários componentes fundamentais interligados entre si, um desses componentes são os Operadores de Serviços de Internet ou **Internet Service Provider** (ISPs) como são tradicionalmente chamados em Inglês.
 
 **Nota. ** Hoje, estes Operadores são simplesmente chamados de Operadores de Serviços ou _Service Providers_(SP). Por esta razão, preferi usar a abreviação _SP_ na maior parte do artigo ao invés de Operador de Serviços de Telecomunicações para não confundir o leitor, porque geralmente as diferentes soluções de fabricantes para este seguimento, os treinamentos, as certificações, etc., estão sempre descritos _SPs_ e não por outro nome.
 
