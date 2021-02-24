@@ -2,6 +2,9 @@
 layout: "post"
 title: "Sessões do Cisco Live Para Melhor Entender a Arquictectura SP da Cisco"
 date: "2021-02-24 12:40"
+category: SP
+comments: true
+author: Simba, R. H. N.
 ---
 Muitos engenheiros têm dificuldades em entender a solução da Cisco para os _Service Providers_, exactamente a arquitectura e como os diferentes elementos encaixam na mesma.
 
