@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Cisco Live 2021"
+title: "Cisco Live 2021, Registo"
 date: "2021-02-23 13:03"
 author: Simba, R. H. N.
 comments: true
