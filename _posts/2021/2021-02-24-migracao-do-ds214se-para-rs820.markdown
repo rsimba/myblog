@@ -52,6 +52,8 @@ Seguem aqui alguns links interessantes:
 
 [Synology RS820+](https://www.amazon.com/gp/product/B07YBX86C2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07YBX86C2&linkCode=as2&tag=rsimba-20&linkId=3e4d6e4408580a2bbef70cea4d0069e6)
 
+[Synology RS820+ Especificações](https://www.synology.com/en-global/products/RS820+)
+
 [Synology RS820+ guia de instalação](https://global.download.synology.com/download/Document/Hardware/HIG/RackStation/20-year/RS820+/enu/Syno_HIG_RS820_Plus_RS820RP_Plus_enu.pdf)
 
 
