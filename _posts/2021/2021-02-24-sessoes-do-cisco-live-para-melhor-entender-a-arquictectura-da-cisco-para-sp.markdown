@@ -18,6 +18,6 @@ Existem muitas sessões para SPs, mas gostaria de particularizar três (3) e seg
 
 Estas sessões podem ser usadas com base para entender as restantes sessões que fazer parte do domínio SP e nos ajudam a entender o porquê das mudanças das redes de SPs, o porquê da arquitectura actual, como são estas arquitecturas desenhadas, e quais são as tendências.
 
-Com a base que ganhamos destas sessões, podemos ser mais específicos e procurar sessões que, por exemplo, sejam apenas sobre o NSO, BGP, ISIS, etc. E/ou fazermos alguns labs.
+Com a base que ganhamos destas sessões, podemos ser mais específicos e procurar sessões que, por exemplo, sejam apenas sobre o NSO, BGP, ISIS, etc. E/ou fazermos alguns labs para reforçar o nosso entendimento.
 
 Abraços
