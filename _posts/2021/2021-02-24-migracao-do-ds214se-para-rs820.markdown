@@ -13,7 +13,7 @@ O RS820+ é considerado um dispositivo de armazenamento de classe empresarial e 
 - Suporta o máximo de 56TB de disco divididos em 4, cada disco com 14TB
 - 4x Portas Gigabit com opção de instalar uma carta de 10Gbps 
 - CPU com 4-core 2.1 GHz
-- 2GB de memória DDR4 e extensível até 18GB
+- 2GB de memória DDR4, extensível até 18GB
 
 De momento estou com 3TB num único disco e com planos de aumentar a capacidade com o tempo.
 
