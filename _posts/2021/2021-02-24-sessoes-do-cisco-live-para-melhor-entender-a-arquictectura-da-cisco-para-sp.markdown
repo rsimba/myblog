@@ -2,7 +2,7 @@
 layout: "post"
 title: "Sessões do Cisco Live Para Melhor Entender a Arquictectura SP da Cisco"
 date: "2021-02-24 12:40"
-category: SP
+category: Service Provider
 comments: true
 author: Simba, R. H. N.
 ---
