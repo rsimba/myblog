@@ -6,7 +6,7 @@ category: Geral
 comments: true
 author: Simba, R. H. N.
 ---
-Quando se trata de dispositivos para armazenamento de dados e ‘backups’, o Synology é a minha escola. Desde 2017 que usava o Synology DS214Se, mas no fim do ano passado começou a mostrar sinais de cansaço e num desses dias deixou simplesmente de funcionar. Decidi actualizar o DS por uma opção mais potente e com mais espaço de armazenamento, o Synology RS820+.
+Quando se trata de dispositivos para armazenamento de dados e ‘backups’, o Synology é a minha escolha. Desde 2017 que usava o Synology DS214Se, mas no fim do ano passado começou a mostrar sinais de cansaço e num desses dias deixou simplesmente de funcionar. Decidi actualizar o DS por uma opção mais potente e com mais espaço de armazenamento, o Synology RS820+.
 
 ## Especificacoes
 O RS820+ é considerado um dispositivo de armazenamento de classe empresarial e tem as seguintes especificações técnicas:
