@@ -46,7 +46,7 @@ E os que pagarem o All-Access, terão ao acesso a outro tipo de sessão que é o
 Como Engenheiros, o Cisco deve ser considerado como parte da nossa educação técnica e não quer dizer apenas em tecnologias da Cisco, mas em redes em geral. Não percamos esta oportunidade porque em condições normais este evento tem sido presencial e num fuso horário totalmente diferente. Vamos nos registar, e talvez a empresa em trabalhamos para  patrocinar este evento como parte do nosso plano de desenvolvimento profissional ou simplesmente usar a opção Explorer:
 
 - [Cisco Live!](https://www.ciscolive.com/2021.html)
-- [Revisao do catalogo das sessoes](https://www.ciscolive.com/2021/learn/technical-education.html)
+- [Revisao do catálogo das sessoes](https://www.ciscolive.com/2021/learn/technical-education.html)
 
 Mesmo que não atender o evento agora, as sessões são todas gravadas e postas disponíveis sem custo no site do Cisco Live.
 
