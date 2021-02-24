@@ -37,7 +37,7 @@ Existem dois (2) tipos de formatos para a sessões do Cisco Live:
 ### Tipos de Sessões
 Existem também sessões diferentes que podemos atender, tais como:
 - Técnicas
-- Inovacoes
+- Inovações
 - Productos
 
 E os que pagarem o All-Access, terão ao acesso a outro tipo de sessão que é o _Connected Learning_ e nesta sessão é possível termos encontros com alguns engenheiros ou Autores de livros técnicos, fazer labs, etc.
