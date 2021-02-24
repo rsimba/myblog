@@ -25,8 +25,8 @@ A seguinte figura mostra a diferença entre as duas opções:
 
 É possível fazer a actualização de um Pass para o outro, isto é, do Explorer  para o All-Access, assim como é também possível usar o Cisco Larning Credits para pagar o All-Access.
 
-## O Catalogo das Sessões
-O conteúdo do Cisco Live é tão imenso que fica difícil tentarmos seguir todas as sessões e em vários domínios em simultâneo, por esta razão existe um catalogo de sessões que nos ajudam obter informações sobre a emissão de sessões, o apresentador, a descrição da sessão e muito mais. Podemos também criar e filtrar uma lista de sessões favoritas de acordo ao canal de emissão, ao tipo de sessão, a tecnologia, o domínio, etc.
+## O Catálogo das Sessões
+O conteúdo do Cisco Live é tão imenso que fica difícil tentarmos seguir todas as sessões e em vários domínios em simultâneo, por esta razão existe um catálogo de sessões que nos ajudam obter informações sobre a emissão de sessões, o apresentador, a descrição da sessão e muito mais. Podemos também criar e filtrar uma lista de sessões favoritas de acordo ao canal de emissão, ao tipo de sessão, a tecnologia, o domínio, etc.
 <img src="/assets/CL_Passes1.jpg" class="align-center">
 
 ### Formato das Sessões
