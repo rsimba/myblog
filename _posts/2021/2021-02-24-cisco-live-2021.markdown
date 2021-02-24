@@ -1,5 +1,54 @@
 ---
 layout: "post"
 title: "Cisco Live 2021"
-date: "2021-02-24 12:20"
+date: "2021-02-23 13:03"
+author: Simba, R. H. N.
+comments: true
+category: Eventos
 ---
+Tal como foi o ano passado, mais uma vez o Cisco Live será em formato Virtual ou Digital e o registos para as sessões já estão abertas.
+
+Dos vários eventos anuais da Cisco, o Cisco Live continua a ser o mais importante em conteúdo e dimensão. No seu actual formato, o evento vai se realizar durante dois (2) dias e 6h por dia, e visa de educar, capacitar clientes, parceiros, e outros interessados nas várias soluções e tecnologias que a Cisco tem a oferecer. Por ser um evento global, o fuso horário foi considerado e  estará divido em três (3) partes que vai de acordo a localização geográfica dos participantes, cada uma dessas regiões terá a sua data específica do evento ou a mesma data que outra região:
+- Americas: dias 30-31 de Março
+- APJC (Ásia Pacifica, Japão e China): dias 31 de Março e 1 de Abril.
+- EMEAR (Europa, Médio Oriente, África, Rússia): dias 31 de Março e 1 de Abril. 
+
+ Esta divisão facilitará os participantes que estiverem numa determinada localização geográfica e evitar ter de acordar às madrugadas para atender certas sessões ou mesmo não atender o evento todo. Contudo, esta divisão não quer dizer que o conteúdo será diferente em cada região, será exactamente o mesmo e a diferenças será principalmente no apresentador para cada sessão e região
+
+## Opções de Registos
+Existem actualmente duas (2) opções de registos, chamados de Cisco Live Passes, para atender o Cisco Live Digital:
+- Explorer Pass. Opção sem custos.
+- All-Access. Opção paga, $349.
+
+A seguinte figura mostra a diferença entre as duas opções:
+<img src="/assets/CL_Passes.jpg" class="align-center">
+
+É possível fazer a actualização de um Pass para o outro, isto é, do Explorer  para o All-Access, assim como é também possível usar o Cisco Larning Credits para pagar o All-Access.
+
+## O Catalogo das Sessões
+O conteúdo do Cisco Live é tão imenso que fica difícil tentarmos seguir todas as sessões e em vários domínios em simultâneo, por esta razão existe um catalogo de sessões que nos ajudam obter informações sobre a emissão de sessões, o apresentador, a descrição da sessão e muito mais. Podemos também criar e filtrar uma lista de sessões favoritas de acordo ao canal de emissão, ao tipo de sessão, a tecnologia, o domínio, etc.
+<img src="/assets/CL_Passes1.jpg" class="align-center">
+
+### Formato das Sessões
+Existem dois (2) tipos de formatos para a sessões do Cisco Live:
+- Emissao (Broadcast). São sessões ao vivo que atendemos de acordo ao nosso agendamento.
+- A qualquer momento (Anytime). São sessões que foram gravados dias antes do evento principal e quem podem ser atendidos a qualquer momento.
+
+### Tipos de Sessões
+Existem também sessões diferentes que podemos atender, tais como:
+- Técnicas
+- Inovacoes
+- Productos
+
+E os que pagarem o All-Access, terão ao acesso a outro tipo de sessão que é o _Connected Learning_ e nesta sessão é possível termos encontros com alguns engenheiros ou Autores de livros técnicos, fazer labs, etc.
+
+# Conclusão
+Como Engenheiros, o Cisco deve ser considerado como parte da nossa educação técnica e não quer dizer apenas em tecnologias da Cisco, mas em redes em geral. Não percamos esta oportunidade porque em condições normais este evento tem sido presencial e num fuso horário totalmente diferente. Vamos nos registar, e talvez a empresa em trabalhamos para  patrocinar este evento como parte do nosso plano de desenvolvimento profissional ou simplesmente usar a opção Explorer:
+
+- [Cisco Live!](https://www.ciscolive.com/2021.html)
+- [Revisao do catalogo das sessoes](https://www.ciscolive.com/2021/learn/technical-education.html)
+
+Mesmo que não atender o evento agora, as sessões são todas gravadas e postas disponíveis sem custo no site do Cisco Live.
+
+
+Abraços,
