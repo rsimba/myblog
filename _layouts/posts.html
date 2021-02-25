@@ -13,14 +13,9 @@ layout: default
 				1 min
 			{% else %}
 				{{ words | divided_by: 180 }} mins
-			{% endif %}
+			{% endif %} read
 			<span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
 		</p>
 		{{ content }}
 	</div>
 </div>
-
-
-{% include comments.html %}
-
-{% include read_time.html %}
