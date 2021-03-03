@@ -6,7 +6,7 @@ category: Service Provider
 comments: true
 author: Simba, R. H. N.
 ---
-Os _ISPs_ começaram a ganhar popularidade na década de 1990 quando a Internet passou a ser usado para fins comerciais. Nesta mesma fase, a maior competição dos _ISPs_ vinham das grandes empresas de Telefonia que tinham equipamentos e tecnologias maduras que os permitia oferecer serviços diferenciados tais como  Voz e VPN, ao contrário dos _ISPs_ que apenas ofereciam acesso à Internet.
+Os _ISPs_ começaram a ganhar popularidade na década de 1990 quando a Internet passou a ser usado para fins comerciais. Nesta mesma fase, a maior competição dos _ISPs_ vinha das grandes empresas de Telefonia que tinham equipamentos e tecnologias maduras que os permitia oferecer serviços diferenciados tais como  Voz e VPN, ao contrário dos _ISPs_ que apenas ofereciam acesso à Internet.
 
 Desde o seu princípio nos anos 1980, a Internet evoluiu para um meio de comunicação inovador e com muitas possibilidades. No centro destas inovações estão os [_ISPs_](https://www.ricardosimba.com/service%20provider/2021/02/20/service-providers-introducao.html) por serem um dos elementos que asseguram a infra-estrutura da Internet. É dentro destas inovações e possibilidades que surgiram os operadores de serviços Web e de Conteúdo, e passamos a ver outra categoria de operadores (_cloud_) com infra-estrutura a partir da qual muitos desses novos serviços funcionam, e hoje são responsáveis por gerar a maior parte do tráfego global da Internet.
 
