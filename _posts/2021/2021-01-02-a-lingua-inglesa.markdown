@@ -2,7 +2,7 @@
 layout: "post"
 title: "A Língua Inglesa"
 date: "2021-01-02 09:56"
-categories: Carreira
+categories: Career
 comments: true
 author: Simba, R. H. N.
 ---

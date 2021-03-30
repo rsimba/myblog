@@ -4,7 +4,7 @@ title: "Cisco Live 2021, Registo"
 date: "2021-02-24 13:03"
 author: Simba, R. H. N.
 comments: true
-category: Eventos
+category: Events
 ---
 Tal como foi o ano passado, mais uma vez o Cisco Live será em formato Virtual ou Digital e o registos para as sessões já estão abertas.
 

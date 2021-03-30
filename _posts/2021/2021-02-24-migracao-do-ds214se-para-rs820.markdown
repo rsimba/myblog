@@ -2,7 +2,7 @@
 layout: "post"
 title: "Migração do DS214Se para o RS820+"
 date: "2021-02-24 06:53"
-category: Geral
+category: General
 comments: true
 author: Simba, R. H. N.
 ---

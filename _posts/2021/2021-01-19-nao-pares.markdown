@@ -4,7 +4,7 @@ title: "Não Pares"
 date: "2021-01-19 19:42"
 author: Simba, R. H. N.
 comments: true
-category: Carreira
+category: Career
 ---
 Deves continuar com os teus objetivos e planos mesmo quando o relógio parar.
 

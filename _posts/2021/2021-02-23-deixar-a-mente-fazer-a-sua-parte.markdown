@@ -2,7 +2,7 @@
 layout: "post"
 title: "Deixar A Mente Fazer a Sua Parte"
 date: "2021-02-23 09:06"
-category: Geral
+category: General
 comments: true
 author: Simba, R. H. N.
 ---

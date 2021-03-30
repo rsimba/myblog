@@ -2,7 +2,7 @@
 layout: "post"
 title: "Falar em Público"
 date: "2021-01-03 00:20"
-categories: Carreira
+categories: Career
 comments: true
 author: Simba, R. H. N.
 ---
