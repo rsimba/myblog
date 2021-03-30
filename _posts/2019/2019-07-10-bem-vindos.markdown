@@ -2,7 +2,7 @@
 layout: "post"
 title: "Bem-vindo"
 date: "2019-07-14 10:11"
-categories: Geral
+categories: General
 comments: true
 author: Simba, R. H. N.
 ---

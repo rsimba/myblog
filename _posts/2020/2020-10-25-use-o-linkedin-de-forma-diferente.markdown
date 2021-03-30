@@ -4,7 +4,7 @@ title: "Use o LinkedIn de Forma Diferente"
 date: "2020-10-25 20:58"
 author: Simba, R. H. N.
 comments: true
-category: Carreira
+category: Career
 ---
 Hoje boa parte de profissionais e empresas de várias indústrias têm presença no LinkedIn, todos com um objectivo específico.
 

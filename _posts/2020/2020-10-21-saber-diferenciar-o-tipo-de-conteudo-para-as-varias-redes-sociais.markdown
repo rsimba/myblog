@@ -4,7 +4,7 @@ title: "O Contexto das Coisas"
 date: "2020-10-21 09:30"
 author: Simba, R. H. N.
 comments: true
-category: Geral
+category: General
 ---
 
 Existem muitas coisas na minha carreira profissional que se tivesse de recomeçar as teria feito de forma diferente, uma delas é como olhar para um protocolo, tecnologia, ou solução antes de mergulhar nos detalhes técnicos.

@@ -3,7 +3,7 @@ layout: "post"
 title: "Dicas de Carreira, Parte 1"
 date: "2020-03-25 07:10"
 author: Simba, R. H. N.
-categories: Carreira
+categories: Career
 comments: true
 ---
 
