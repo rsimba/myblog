@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Categorias
+title: Categories
 ---
 
 <div id="archives">
