@@ -6,17 +6,16 @@ category: General
 comments: true
 author: Simba, R. H. N.
 ---
+After a few years, I've decided to get back to studying for technical certifications, starting with the DevNet Associate exam.
 
-After a hiatus of few years, I've decided to get back to studying for technical certifications starting with the DevNet Associate exam.
-
-For my preparation, I'll be using a simple three steps study approach and I always use when studying for a certification or any new topic. The steps are the following:
+For my preparation, I'll use a simple three-step study approach that I always use when studying for a certification or any new topic:
 1. Understand the exam blueprint
 2. List and organize the available study material
-3. How to study for the topics on the blueprint using the listed material.
+3. How to learn the exam topics on the blueprint using your listed study resource.
 
-With this simple plan, we start first by understanding what topics are covered in the exam by familiarizing ourselves with the official exam blueprint. Next, we list and organize all the resource from which we will learn all the exam topics, and these can be books, courses, videos, articles, blog posts, and others. And lastly, we need to study the material in a way that we personally learn better, that is, apply our personal study method in order to get the most of any study session.
+With this simple plan, we start first by understanding what topics are covered in the exam by familiarizing ourselves with the official exam blueprint. Next, we list and organize all the resources available to us from which we will learn all the exam topics, and these can be books, courses, videos, articles, blog posts, and others. And lastly, we need a study strategy that we will need to apply when studying from different resources.
 
-It's also important to have a timeline and a way to track your studies. This will allow you to keep on track and not lose yourself.
+It's also essential to have a timeline and track your studies; this will allow you to focus on the main goal, which is to pass the exam.
 
 
 Best,
