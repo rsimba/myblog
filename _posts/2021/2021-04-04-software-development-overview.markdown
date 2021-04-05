@@ -6,7 +6,7 @@ category: Certifications
 comments: true
 author: Simba, R. H. N.
 ---
-This post is related to the first section of the DEVASC-200-901 exam: 1.0 Software Development and Design (precisely, subsections 1.3 and 1.4). We must understand how application software is developed, from its inception to execution, and the different development methods used during the process.
+This post is related to the first section of the DEVASC-200-901 exam: 1.0 Software Development and Design (precisely, subsections 1.3 and 1.4). We must understand how application software are developed and the different development methods used during the process.
   
 ## Introduction
 Software is a general term for different programs used to operate a computer; these programs are essentially a set of well-defined instructions for a computer to perform a specific task. There are two significant types of software: **system software** and **application software**.
